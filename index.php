@@ -60,7 +60,7 @@ function clean_str($str) {
 
 <html>
 <head>
-	<title>FrogFind!</title>
+	<title>NvSE</title>
 </head>
 <body>
 
