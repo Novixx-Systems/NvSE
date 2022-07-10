@@ -78,7 +78,7 @@ function clean_str($str) {
     
 <?php } else { // no search query, so show new search ?>
     <br><br><center><h1>Novixx Search Engine (NvSE)</h1></center>
-    <center><h3>The Search Engine for Vintage Computers</h3></center>
+    <center><h3>The Search Engine for Every Computer</h3></center>
     <br><br>
     <center>
     <form action="/" method="get">
