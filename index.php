@@ -67,7 +67,7 @@ function clean_str($str) {
 <?php if($show_results) { // there's a search query in q, so show search results ?>
 
     <form action="/" method="get">
-    <a href="/"><font size=6 color="#008000">Frog</font><font size=6 color="#000000">Find!</font></a> Leap again: <input type="text" size="30" name="q" value="<?php echo urldecode($query) ?>">
+    <a href="/"><font size=6 color="#008000">Go back</font></a> Jump again: <input type="text" size="30" name="q" value="<?php echo urldecode($query) ?>">
     <input type="submit" value="Ribbbit!">
     </form>
     <hr>
@@ -77,17 +77,16 @@ function clean_str($str) {
     <?php echo $final_result_html ?>
     
 <?php } else { // no search query, so show new search ?>
-    <br><br><center><h1><font size=7><font color="#008000">Frog</font>Find!</font></h1></center>
+    <br><br><center><h1>Novixx Search Engine (NvSE)</h1></center>
     <center><h3>The Search Engine for Vintage Computers</h3></center>
     <br><br>
     <center>
     <form action="/" method="get">
-    Leap to: <input type="text" size="30" name="q"><br>
-    <input type="submit" value="Ribbbit!">
+    Jump to: <input type="text" size="30" name="q"><br>
+    <input type="submit" value="Jump">
     </center>
     <br><br><br>
-    <small><center>Built by <b><a href="https://youtube.com/ActionRetro">Action Retro</a></b> on YouTube | <a href="about.php">Why build such a thing?</a></center><br>
-    <small><center>Powered by DuckDuckGo</center></small>
+	    <small><center>Powered by DuckDuckGo and FrogFind</center></small>
 </form>
 </form>
 
