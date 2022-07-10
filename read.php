@@ -72,28 +72,6 @@ function clean_str($str) {
      <title><?php echo $readability->getTitle();?></title>
  </head>
  <body>
-    <p>
-        <form action="/read.php" method="get">
-        <a href="/">Back to <b><font color="#008000">Frog</font><font color="000000">Find!</font></a></b> | Browsing URL: <input type="text" size="38" name="a" value="<?php echo $article_url ?>">
-        <input type="submit" value="Go!">
-        </form>
-    </p>
-    <hr>
-    <h1><?php echo clean_str($readability->getTitle());?></h1>
-    <p> <?php
-        $img_num = 0;
-        $imgline_html = "View page images:";
-        foreach ($readability->getImages() as $image_url):
-            //we can only do png and jpg
-            if (strpos($image_url, ".jpg") || strpos($image_url, ".jpeg") || strpos($image_url, ".png") === true) {
-                $img_num++;
-                $imgline_html .= " <a href='image.php?loc=" . $loc . "&i=" . $image_url . "'>[$img_num]</a> ";
-            }
-        endforeach;
-        if($img_num>0) {
-            echo  $imgline_html ;
-        }
-    ?></small></p>
     <?php if($error_text) { echo "<p><font color='red'>" . $error_text . "</font></p>"; } ?>
     <p><font size="4"><?php echo $readable_article;?></font></p>
  </body>
